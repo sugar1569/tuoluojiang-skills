@@ -32,7 +32,9 @@
 
 ## 🔧 安装
 
-### 使用 Git Clone（推荐）
+### ✅ 方式一：Git Clone（推荐 - 100% 有效）
+
+这是最可靠的安装方式，适用于所有 AI 编程工具：
 
 ```bash
 # 克隆仓库
@@ -41,20 +43,33 @@ git clone https://github.com/sugar1569/tuoluojiang-skills.git
 # 进入目录
 cd tuoluojiang-skills
 
-# 将技能包复制到项目
-cp -r tuoluojiang_api /path/to/your/project/.trae/skills/
-cp -r tuoluojiang_admin /path/to/your/project/.trae/skills/
+# 将技能包复制到项目的 .trae/skills/ 目录
+# 例如：
+cp -r tuoluojiang_api /你的项目路径/.trae/skills/
+cp -r tuoluojiang_admin /你的项目路径/.trae/skills/
 ```
 
-### 或使用 skills CLI
+安装后，在 AI 编程工具中就能使用这些技能包了。
+
+### ⚠️ 方式二：使用 skills CLI（可能不工作）
 
 ```bash
-# 安装后端 API 技能
-npx skills add sugar1569/tuoluojiang-skills/tuoluojiang_api
+# 安装 skills CLI（需要 Node.js）
+npm install -g skills
 
-# 安装前端管理后台技能
+# 然后尝试安装（但可能不支持此格式）
+npx skills add sugar1569/tuoluojiang-skills/tuoluojiang_api
 npx skills add sugar1569/tuoluojiang-skills/tuoluojiang_admin
 ```
+
+**注意**：`skills` CLI 由 Vercel 开发，可能不支持所有 AI 编程工具。如果不工作，请使用方式一。
+
+### 💡 为什么 Git Clone 更可靠？
+
+- ✅ 不依赖任何额外工具
+- ✅ 适用于所有 AI 编程工具（Trae、Cursor 等）
+- ✅ 只需要 Git
+- ✅ 安装过程完全可控
 
 ## 🎯 使用场景
 
